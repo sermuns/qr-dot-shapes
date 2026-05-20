@@ -83,13 +83,15 @@ fn render_qrcode_char_string_to_svg(inp: &str, path: impl AsRef<Path>) {
             if character != QRCODE_DARK_COLOR {
                 continue;
             }
-            let rect = Rectangle::new()
-                .set("y", y * RECT_SIZE_PX)
-                .set("x", x * RECT_SIZE_PX)
-                .set("width", RECT_SIZE_PX)
-                .set("height", RECT_SIZE_PX);
+            // let rect = Rectangle::new()
+            //     .set("y", y * RECT_SIZE_PX)
+            //     .set("x", x * RECT_SIZE_PX)
+            //     .set("width", RECT_SIZE_PX)
+            //     .set("height", RECT_SIZE_PX);
+            //
+            // document.append(rect);
 
-            document.append(rect);
+            let path = 
         }
     }
 
